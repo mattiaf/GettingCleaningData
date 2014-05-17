@@ -1,8 +1,8 @@
 ## CODEBOOK
 
-This codebook contains description of
-* variables contained in the tidy.data.txt file
-** naming convention for the variables
+This codebook contains a description of
+* the variables contained in the tidy.data.txt file
+* the naming convention for the variables
 * the procedure to obtain them used in the run_analysis.R code
 
 
@@ -51,10 +51,16 @@ the meaning of BodyBody is not documented in the features_info either...
 
 
 #### Variable naming convention
-Each variable is named with the following schemed
-[domain][Source][Instrument][Jerk][Measure][Direction]
-where each block means:
-* [domain] can be either t (time) or (f) frequency
+Each variable is named with the following scheme
 
+[domain][Physical Origin][Instrument][Jerk][Statistics][Direction]
+
+where each block has the following meaning:
+* [domain] can be either t (time) or f (frequency)
+* [Physical Origin] can be either Body or Gravity
+* [Instrument] can be either Accelerometer or Gyroscope
+* [Jerk], if present, indicates that the measure is a Jerk signal representing the body linear acceleration and angular velocity
+* [Statistics] can be either Mean or Std (Standard Deviation)
+* [Direction] can be either X,Y,Z or Mag in case of magnitude of the signal
 
 ### Procedure
