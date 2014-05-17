@@ -1,8 +1,7 @@
 ## CODEBOOK
 
 This codebook contains a description of
-* the variables contained in the tidy.data.txt file
-* the naming convention for the variables
+* the variables contained in the tidy.data.txt file, and the naming convention for the variables
 * the procedure to obtain them used in the run_analysis.R code
 
 
@@ -28,7 +27,7 @@ are mean and std deviations of the time domain signals of jerk signals from the 
 * _columns 33 to 36_,    tBodyAccelerationMagMean,Std and tGravityAccelerationMagMean,Std		
 are mean and std deviations of the magnitude of the Body/Gravity time domain signals from the accelerometer
 
-* _columns 37 and 38_,    tBodyAccelerationJerkMagMean, Std	
+* _columns 37 and 38_,    tBodyAccelerationJerkMagMean, Std		
 same for Jerk signal
 
 * _columns 39 to 42_,    tBodyGyroscopeMagMean,Std tBodyGyroscopeJerkMagMean,Std		
@@ -58,7 +57,7 @@ Each variable is named with the following scheme
 where each block has the following meaning:
 * [domain] can be either t (time) or f (frequency)
 * [Physical Origin] can be either Body or Gravity
-* [Instrument] can be either Accelerometer or Gyroscope
+* [Instrument] can be either Acceleration or Gyroscope
 * [Jerk], if present, indicates that the measure is a Jerk signal representing the body linear acceleration and angular velocity
 * [Statistics] can be either Mean or Std (Standard Deviation)
 * [Direction] can be either X,Y,Z or Mag in case of magnitude of the signal
