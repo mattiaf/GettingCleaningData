@@ -1,9 +1,11 @@
+## READ ME
+
 This repository contains the following files:
 
-*CodeBook.md
-*README.md
-*run_analysis.R
-*tidy.data.txt
+* CodeBook.md
+* README.md
+* run_analysis.R
+* tidy.data.txt
 
 **run_analysis.R** is an R code that does the following:
 1) Merges the UCIHAR test and training sets to create one data set 
