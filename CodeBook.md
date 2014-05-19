@@ -1,8 +1,16 @@
 ## CODEBOOK
 
 This codebook contains a description of
+* the data
 * the variables contained in the tidy.data.txt file, and the naming convention for the variables
 * the procedure to obtain them used in the run_analysis.R code
+
+
+### Data
+
+An experiment has been carried out with 30 volunteers performing 6
+activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) while wearing a smartphone (Samsung Galaxy S II) on the waist. The accelerometer and gyroscope of the smartphone captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The full data are available at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+A detailed description of the measurements is available in the next Section.
 
 
 ### Variables
