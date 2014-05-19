@@ -70,7 +70,7 @@ Variables in the tidy.data.txt file are obtained with the run_analysis.R code
 
 The code does the following
 
-* **Open the data** provided by the BLAH survey
+* **Open the data** provided by the UCIHAR survey at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 * **Merge datasets, assign column names and assign activity names**. Training and test data are appended to each other. Two columns indicating subjects and activities are bound to the data set.
 Names of activities are substituted to the corresponding numbers, using the legend found in the activity_labels.txt file.
 * **Extract columns of intereset**. Variables containing the word 'std' or 'mean' are selected (with the grepl function) and extracted from the dataset, creating a new data frame.
