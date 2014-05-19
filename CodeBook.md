@@ -9,7 +9,7 @@ This codebook contains a description of
 ### Data
 
 An experiment has been carried out with 30 volunteers performing 6
-activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) while wearing a smartphone (Samsung Galaxy S II) on the waist. The accelerometer and gyroscope of the smartphone captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The full data are available at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) while wearing a smartphone (Samsung Galaxy S II) on the waist. The accelerometer and gyroscope of the smartphone captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The full data are available at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip   
 A detailed description of the measurements is available in the next Section.
 
 
@@ -80,7 +80,7 @@ The code does the following
 
 * **Open the data** provided by the UCIHAR survey at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 * **Merge datasets, assign column names and assign activity names**. Training and test data are appended to each other. Two columns indicating subjects and activities are bound to the data set.
-Names of activities are substituted to the corresponding numbers, using the legend found in the activity_labels.txt file.
+Names of activities are substituted to the corresponding numbers, using the legend provided by the UCIHAR dataset in the activity_labels.txt file.
 * **Extract columns of intereset**. Variables containing the word 'std' or 'mean' are selected (with the grepl function) and extracted from the dataset, creating a new data frame.
 * **Compute average values**. For each combination of subject and activity, average values are computed using the aggregate function. This passage creates our tidy dataset.
 * **Export table**. The tidy dataset is exported in a tab-delimited file (tidy.data.txt). Column names are made more intelligible. 
