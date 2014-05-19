@@ -25,7 +25,3 @@ you can run the code inside R, simply as:
 described in the CodeBook for each activity and each subject.  
 You can easily read the file inside R using:  
 > tidydata = read.table("tidy.data.txt", header=TRUE)
-
-The starting data for this project has been downloaded from: 
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-Detailed information about the data is available at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
