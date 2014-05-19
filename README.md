@@ -15,7 +15,8 @@ This repository contains the following files:
 For details on the code, please see the CodeBook.md file.
 
 Once you have downloaded the data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-you can run the code inside R, simply as source("run_analysis.R")
+you can run the code inside R, simply as:  
+> source("run_analysis.R")
 
 
 **CodeBook.md** describes the output file of run_analysis.R (tidy.data.txt), the variable and the work that has been done to clean up the data
@@ -23,7 +24,7 @@ you can run the code inside R, simply as source("run_analysis.R")
 **tidy.data.txt** is the ouput of run_analysis.R and it is a tab-delimited file containing mean values of the variables
 described in the CodeBook for each activity and each subject.  
 You can easily read the file inside R using:  
-tidydata = read.table("tidy.data.txt", header=TRUE)
+> tidydata = read.table("tidy.data.txt", header=TRUE)
 
 The starting data for this project has been downloaded from: 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
