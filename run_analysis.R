@@ -16,13 +16,14 @@ features<-read.table("UCIHARDataset/features.txt") #- 'features.txt': List of al
 
 
 # MERGING DATASETS, ASSIGNING COLUMN NAMES, ASSIGNING ACTIVITY NAMES
+
 X.merge <- rbind(X.test, X.train) # append train set to test set
 y.merge <- rbind(y.test, y.train)  # append training labels to test labels
 subject.merge <- rbind(subject.test, subject.train) # append train subjects to test subjects
 
 featureNames <- as.character(features$V2)
-colnames(X.merge) <- featureNames # assigns column names to set
-colnames(y.merge) <- 'Activity'  # assigns column names to activity
+colnames(X.merge) <- featureNames # assigns column names to data
+colnames(y.merge) <- 'Activity'  # assigns column name Activity to the column with activities
 
 #substitute number of activities (1,2,..., 6) with names (WALKING, .... , LAYING)
 y.merge$Activity<-factor(y.merge$Activity) #makes factor
@@ -42,6 +43,7 @@ newtable<-bigtable[,selection]
 
 
 # COMPUTE AVERAGE VALUES
+
 # for each combination of subject and activity, compute mean of every variable
 averages <-aggregate(newtable[,c(3:ncol(newtable))], by=list(newtable$subject,newtable$Activity), FUN=mean, na.rm=FALSE)
 colnames(averages)[1] <- 'subject'
@@ -53,6 +55,7 @@ averages <-averages[order(averages$subject, averages$Activity), ]
 
 
 # EXPORT TABLE IN A TAB-DELIMITED FILE
+
 # give better names to columns
 colnames(averages)<-gsub("tBody", "TimeBody", colnames(averages))
 colnames(averages)<-gsub("fBody", "FrequencyBody", colnames(averages))
