@@ -53,7 +53,11 @@ averages <-averages[order(averages$subject, averages$Activity), ]
 
 
 # EXPORT TABLE IN A TAB-DELIMITED FILE
-# make column nicer
+# give better names to columns
+colnames(averages)<-gsub("tBody", "TimeBody", colnames(averages))
+colnames(averages)<-gsub("fBody", "FrequencyBody", colnames(averages))
+colnames(averages)<-gsub("tGravity", "TimeGravity", colnames(averages))
+colnames(averages)<-gsub("fGravity", "FrequencyGravity", colnames(averages))
 colnames(averages)<-gsub("\\)", "", colnames(averages))
 colnames(averages)<-gsub("\\(", "", colnames(averages))
 colnames(averages)<-gsub("-", "", colnames(averages))
